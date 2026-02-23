@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./subpage.css";
+import "./SubPage.css";
 import musculationImg from "../assets/musculation.png";
 import crossImg from "../assets/cross.png";
 import cardioImg from "../assets/cardio.png";
