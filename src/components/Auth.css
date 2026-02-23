@@ -106,22 +106,45 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .auth-page-container {
-        padding: 80px 15px;
+        padding: 60px 15px;
     }
 
     .auth-form-container {
-        padding: 30px 20px;
+        padding: 40px 25px;
     }
 
     .auth-title {
         font-size: 32px;
     }
 
+    .auth-subtitle {
+        font-size: 14px;
+    }
+
     .auth-input-group {
         flex-direction: column;
+        gap: 20px;
     }
 
     .auth-input-half {
         width: 100%;
+    }
+
+    .auth-button {
+        font-size: 18px;
+        padding: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .auth-form-container {
+        padding: 30px 20px;
+        box-shadow: none;
+        border: none;
+        background-color: transparent;
+    }
+
+    .auth-title {
+        font-size: 28px;
     }
 }

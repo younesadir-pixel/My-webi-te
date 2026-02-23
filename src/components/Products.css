@@ -669,12 +669,26 @@
     }
 
     .shop-promo-strip {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .shop-promo-banner {
         grid-template-columns: 1fr;
         padding: 36px 30px;
+        text-align: center;
+    }
+
+    .shop-toolbar {
+        height: auto;
+        padding: 15px 5%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .shop-filters {
+        width: 100%;
+        justify-content: center;
+        padding-bottom: 5px;
     }
 }
 
@@ -684,10 +698,22 @@
     }
 
     .shop-promo-strip {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 
     .shop-toolbar {
         gap: 12px;
+    }
+
+    .shop-hero-title {
+        font-size: 48px;
+    }
+
+    .shop-hero {
+        height: 45vh;
+    }
+
+    .shop-cart-panel {
+        max-width: 100%;
     }
 }

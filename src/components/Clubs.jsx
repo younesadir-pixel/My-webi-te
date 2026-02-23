@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Clubs.css";
-import musculationImg from "./musculation.png";
-import cardioImg from "./cardio.png";
-import crossImg from "./cross.png";
-import coursImg from "./cours.png";
-import bikingImg from "./biking.png";
-import salleImg from "./salle-casablanca.png";
+import musculationImg from "../assets/musculation.png";
+import cardioImg from "../assets/cardio.png";
+import crossImg from "../assets/cross.png";
+import coursImg from "../assets/cours.png";
+import bikingImg from "../assets/biking.png";
+import salleImg from "../assets/salle-casablanca.png";
 
 /* ── DATA ────────────────────────────────────────────────────────── */
 const schedule = [

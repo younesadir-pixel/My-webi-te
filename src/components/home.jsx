@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
-import musculationImg from "./musculation.png";
-import cardioImg from "./cardio.png";
-import coursImg from "./cours.png";
-import crossImg from "./cross.png";
-import bikingImg from "./biking.png";
-import heroImg from "./aaron-brogden-9y4MaTz2Js0-unsplash.jpg";
+import musculationImg from "../assets/musculation.png";
+import cardioImg from "../assets/cardio.png";
+import coursImg from "../assets/cours.png";
+import crossImg from "../assets/cross.png";
+import bikingImg from "../assets/biking.png";
+import heroImg from "../assets/aaron-brogden-9y4MaTz2Js0-unsplash.jpg";
 
 const backgroundImage = heroImg;
 

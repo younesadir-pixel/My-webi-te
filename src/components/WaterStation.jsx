@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./SubPage.css";
-import cardioImg from "./cardio.png";
-import coursImg from "./cours.png";
-import bikingImg from "./biking.png";
+import cardioImg from "../assets/cardio.png";
+import coursImg from "../assets/cours.png";
+import bikingImg from "../assets/biking.png";
 
 const features = [
     { icon: "💧", name: "YANGA SPORTS", sub: "Eau vitaminée", desc: "Boissons vitaminées fraîches et fruitées, spécialement formulées pour les sportifs actifs." },

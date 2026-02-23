@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Products.css";
-import crossImg from "./cross.png";
+import crossImg from "../assets/cross.png";
 
 /* ── DATA ─────────────────────────────────────────────────────────── */
 const PRODUCTS = [

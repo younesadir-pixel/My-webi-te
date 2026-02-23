@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./SubPage.css";
-import cardioImg from "./cardio.png";
-import coursImg from "./cours.png";
-import musculationImg from "./musculation.png";
+import cardioImg from "../assets/cardio.png";
+import coursImg from "../assets/cours.png";
+import musculationImg from "../assets/musculation.png";
 
 const features = [
     { icon: "〰️", name: "VIBRATIONS", sub: "Technologie oscillante", desc: "La plateforme Sismo génère des vibrations de 5 à 35 Hz sollicitant les fibres musculaires profondes inaccessibles autrement." },

@@ -571,21 +571,29 @@
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
     .act-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .act-cours-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .act-coaches-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
+    .act-hero {
+        height: 60vh;
+    }
+
+    .act-hero-title {
+        font-size: 52px;
+    }
+
     .act-strip {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .act-grid {
@@ -593,14 +601,40 @@
     }
 
     .act-card {
-        height: 320px;
+        height: 300px;
+    }
+
+    .act-card-num {
+        font-size: 40px;
+        top: 15px;
+        right: 15px;
+    }
+
+    .act-schedule-table-wrap {
+        margin: 0 -5%;
+        padding: 0 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .act-strip {
+        grid-template-columns: 1fr;
+    }
+
+    .act-hero-title {
+        font-size: 42px;
+    }
+
+    .act-tag {
+        font-size: 10px;
+        padding: 5px 12px;
     }
 
     .act-cours-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 
     .act-coaches-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 }

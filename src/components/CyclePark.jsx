@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./SubPage.css";
-import bikingImg from "./biking.png";
-import cardioImg from "./cardio.png";
-import crossImg from "./cross.png";
+import bikingImg from "../assets/biking.png";
+import cardioImg from "../assets/cardio.png";
+import crossImg from "../assets/cross.png";
 
 const features = [
     { icon: "🚲", name: "RPM", sub: "Rhythm & Power", desc: "Séances chorégraphiées en musique avec simulation de montées, descentes et sprints sur terrain virtuel." },

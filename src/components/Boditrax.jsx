@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./SubPage.css";
-import coursImg from "./cours.png";
-import cardioImg from "./cardio.png";
-import crossImg from "./cross.png";
+import coursImg from "../assets/cours.png";
+import cardioImg from "../assets/cardio.png";
+import crossImg from "../assets/cross.png";
 
 const features = [
     { icon: "⚖️", name: "POIDS CORPOREL", sub: "Composition précise", desc: "Masse grasse totale et segmentaire, masse maigre, eau corporelle totale et intracellulaire." },

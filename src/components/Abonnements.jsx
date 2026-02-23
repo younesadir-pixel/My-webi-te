@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Abonnements.css";
-import musculationImg from "./musculation.png";
-import crossImg from "./cross.png";
+import musculationImg from "../assets/musculation.png";
+import crossImg from "../assets/cross.png";
 
 /* ── DATA ────────────────────────────────────────────────────────── */
 const plans = [
