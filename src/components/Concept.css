@@ -16,7 +16,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background-image: url('./aaron-brogden-9y4MaTz2Js0-unsplash.jpg');
+    background-image: url('../assets/aaron-brogden-9y4MaTz2Js0-unsplash.jpg');
     background-size: cover;
     background-position: center 20%;
     overflow: hidden;
@@ -378,7 +378,7 @@
     position: relative;
     padding: 120px 8%;
     text-align: center;
-    background-image: url('./musculation.png');
+    background-image: url('../assets/musculation.png');
     background-size: cover;
     background-position: center;
     overflow: hidden;

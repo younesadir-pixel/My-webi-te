@@ -10,7 +10,7 @@
 
 /* 1. INFO BAR */
 .info-bar {
-    background-image: url('./salle-casablanca.png');
+    background-image: url('../assets/salle-casablanca.png');
     background-size: cover;
     background-position: center;
     position: relative;
