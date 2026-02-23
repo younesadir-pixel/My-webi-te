@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./products.css";
+import "./Products.css";
 import crossImg from "../assets/cross.png";
 
 /* ── DATA ─────────────────────────────────────────────────────────── */

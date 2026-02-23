@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./burningpark.css";
+import "./BurningPark.css";
 import crossImg from "../assets/cross.png";
 import cardioImg from "../assets/cardio.png";
 import musculationImg from "../assets/musculation.png";

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./concept.css";
+import "./Concept.css";
 import musculationImg from "../assets/musculation.png";
 import cardioImg from "../assets/cardio.png";
 import coursImg from "../assets/cours.png";

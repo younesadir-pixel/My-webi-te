@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./abonnements.css";
+import "./Abonnements.css";
 import musculationImg from "../assets/musculation.png";
 import crossImg from "../assets/cross.png";
 
