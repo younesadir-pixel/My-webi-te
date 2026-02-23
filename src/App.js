@@ -13,7 +13,7 @@ import Products from "./components/Products";
 import Register from "./components/Register";
 import Login from "./components/Login";
 import MemberSpace from "./components/MemberSpace";
-import GenericPage from "./components/GenericPage";
+
 import BurningPark from "./components/BurningPark";
 import FightPark from "./components/FightPark";
 import CyclePark from "./components/CyclePark";

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./SubPage.css";
 import musculationImg from "../assets/musculation.png";
 import crossImg from "../assets/cross.png";
-import cardioImg from "../assets/cardio.png";
+
 
 const features = [
     { icon: "🥊", name: "BOXE", sub: "Frappe & Technique", desc: "Sacs de frappe professionnels, ring d'entraînement, gants et équipements haut de gamme pour tous les niveaux." },
