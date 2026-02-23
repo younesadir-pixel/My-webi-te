@@ -1,0 +1,127 @@
+/* Auth.css */
+
+.auth-page-container {
+    min-height: 100vh;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px;
+}
+
+.auth-form-container {
+    background-color: #1e1e1e;
+    padding: 50px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    /* Default for Register */
+    color: white;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid #333;
+}
+
+.auth-form-container.login {
+    max-width: 450px;
+    /* Slight difference for Login if needed, or consistent */
+}
+
+.auth-title {
+    color: #FFD600;
+    font-family: 'Impact', sans-serif;
+    font-size: 42px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.auth-subtitle {
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.auth-input-group {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-input {
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: #2a2a2a;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    width: 100%;
+}
+
+.auth-input-half {
+    width: 50%;
+}
+
+.auth-button {
+    background-color: #FFD600;
+    color: #222;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+    font-family: 'Impact', sans-serif;
+    letter-spacing: 1px;
+}
+
+.auth-button:hover {
+    background-color: #fff;
+}
+
+.auth-message {
+    margin-bottom: 15px;
+    color: #FFD600;
+    font-weight: bold;
+}
+
+.auth-link-text {
+    margin-top: 20px;
+    color: #aaa;
+    font-size: 14px;
+}
+
+.auth-link {
+    color: #FFD600;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .auth-page-container {
+        padding: 80px 15px;
+    }
+
+    .auth-form-container {
+        padding: 30px 20px;
+    }
+
+    .auth-title {
+        font-size: 32px;
+    }
+
+    .auth-input-group {
+        flex-direction: column;
+    }
+
+    .auth-input-half {
+        width: 100%;
+    }
+}

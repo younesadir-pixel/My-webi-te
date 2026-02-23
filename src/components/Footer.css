@@ -1,0 +1,130 @@
+/* Footer.css */
+
+.footer {
+    background: #121212;
+    color: #fff;
+    padding: 60px 0 0 0;
+    border-top: 1px solid #333;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.footer-column {
+    flex: 1 1 200px;
+    margin-bottom: 40px;
+}
+
+.footer-logo-column {
+    flex: 1 1 200px;
+    margin-bottom: 40px;
+    text-align: right;
+}
+
+.footer-heading {
+    font-size: 14px;
+    color: #FFD600;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-list-item {
+    margin-bottom: 10px;
+}
+
+.footer-link {
+    color: #BBBBBB;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-link:hover {
+    color: #FFD600;
+}
+
+.footer-brand-title {
+    font-family: 'Impact', sans-serif;
+    font-size: 24px;
+    color: #FFF;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.footer-social-link {
+    color: #FFD600;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer-bottom-bar {
+    border-top: 1px solid #222;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    background: #000;
+}
+
+.footer-bottom-link {
+    color: #666;
+    margin: 0 15px;
+    font-size: 12px;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-bottom-link:hover {
+    color: #fff;
+}
+
+/* Responsive Media Queries */
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-column,
+    .footer-logo-column {
+        flex: 1 1 auto;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .footer-social-icons {
+        justify-content: center;
+    }
+
+    .footer-bottom-bar {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-bottom-link {
+        margin: 5px 0;
+    }
+}

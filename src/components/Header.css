@@ -1,0 +1,320 @@
+/* Header.css */
+
+/* Banner */
+.banner {
+    background-color: #FFD600;
+    color: #000;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+    position: relative;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    z-index: 1002;
+}
+
+.banner-content {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.banner-icon {
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.banner-close {
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Header Container */
+.header-container {
+    position: relative;
+    z-index: 1000;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 20px 50px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 1001;
+}
+
+.main-header.scrolled {
+    padding: 15px 50px;
+    background-color: #000000;
+}
+
+/* Logo */
+.logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    cursor: pointer;
+    text-decoration: none;
+    z-index: 1002;
+    /* Ensure logo stays above mobile menu overlay if needed */
+}
+
+.logo-text {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 32px;
+    color: white;
+    font-style: italic;
+    letter-spacing: 1px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.sub-logo {
+    color: #FFD600;
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-top: 2px;
+    text-transform: uppercase;
+    display: block;
+}
+
+/* Navigation - Desktop */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 5px 0;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s, border-bottom 0.3s;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    color: #FFD600;
+}
+
+/* Specific button styles */
+.header-btn {
+    font-weight: 800;
+    border-radius: 4px;
+    padding: 10px 24px;
+    font-size: 14px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: none;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.header-btn:hover {
+    transform: scale(1.05);
+}
+
+.btn-login {
+    background-color: white;
+    color: black;
+}
+
+.btn-signup {
+    background-color: #FFD600;
+    color: #222;
+}
+
+.btn-logout {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.btn-logout:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Dropdowns */
+.nav-item-dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1a1a1a;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+    border-top: 2px solid #FFD600;
+    padding: 10px 0;
+    flex-direction: column;
+}
+
+.nav-item-dropdown:hover .dropdown-menu {
+    display: flex;
+}
+
+.dropdown-link {
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+
+.dropdown-link:hover {
+    background-color: #333;
+    color: #FFD600;
+}
+
+/* Hamburger Menu Icon */
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    z-index: 1002;
+}
+
+/* Auth Buttons Group */
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 992px) {
+    .main-header {
+        padding: 15px 20px;
+    }
+
+    .menu-icon {
+        display: block;
+        /* Show burger on tablet/mobile */
+        margin-left: auto;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        /* Hide by default */
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        background-color: #121212;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 80px 20px 20px 20px;
+        transition: right 0.3s ease-in-out;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
+        overflow-y: auto;
+        gap: 20px;
+    }
+
+    .nav-menu.active {
+        right: 0;
+        /* Slide in */
+    }
+
+    .nav-item-dropdown {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-link {
+        font-size: 16px;
+        width: 100%;
+        padding: 10px 0;
+        border-bottom: 1px solid #333;
+    }
+
+    .dropdown-menu {
+        position: static;
+        /* Stack naturally in mobile menu */
+        display: none;
+        /* JS toggle would be better, but css hover tricky on mobile. For now, keep simple or always show */
+        background-color: #1e1e1e;
+        width: 100%;
+        border-top: none;
+        padding-left: 15px;
+        box-shadow: none;
+    }
+
+    /* Simple interaction for mobile dropdowns: show on focus/active or just always show for simplicity in css-only approach? 
+       Let's allow them to be expanded or just show them. For this iteration, we'll keep hover but arguably users need click. 
+       Let's stick to hover/focus for now or just display:block inside .active menu if we want.
+    */
+    /* Join the styling for mobile active dropdowns */
+    .nav-item-dropdown.mobile-active .dropdown-menu {
+        display: flex;
+        position: static;
+        box-shadow: none;
+        background-color: #1a1a1a;
+        padding-left: 20px;
+        margin-top: 5px;
+        border-left: 2px solid #FFD600;
+        animation: fadeIn 0.3s ease;
+    }
+
+    /* Keep hover effect disabled or strictly for desktop if needed, 
+       but here we just allow the JS class to control it on mobile */
+    .nav-item-dropdown:hover .dropdown-menu {
+        display: none;
+        /* Disable hover on mobile, rely on click */
+    }
+
+    .nav-item-dropdown.mobile-active .dropdown-menu {
+        display: flex;
+        /* Re-enable for active state */
+    }
+
+    .auth-buttons {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .header-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

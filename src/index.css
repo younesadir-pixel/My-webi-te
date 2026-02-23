@@ -1,0 +1,170 @@
+:root {
+  --color-primary: #FFD600;
+  --color-black: #000000;
+  --color-dark: #121212;
+  --color-grey: #1F1F1F;
+  --color-white: #FFFFFF;
+  --font-heading: 'Impact', 'Arial Black', sans-serif;
+  --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+button {
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Button Styles */
+.btn-yellow {
+  background-color: var(--color-primary);
+  color: var(--color-black);
+  border: 2px solid var(--color-primary);
+  transition: all 0.3s ease;
+}
+
+.btn-yellow:hover {
+  background-color: var(--color-white) !important;
+  color: var(--color-black) !important;
+  border-color: var(--color-white) !important;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--color-white);
+  border: 2px solid var(--color-white);
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background-color: var(--color-primary);
+  color: var(--color-black);
+  border-color: var(--color-primary);
+}
+
+/* Nav Links */
+.nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--color-primary) !important;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--color-primary);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Filter Buttons */
+.filter-btn {
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: var(--color-primary) !important;
+  color: var(--color-black) !important;
+  border-color: var(--color-primary) !important;
+  transform: translateY(-2px);
+}
+
+.filter-btn-white {
+  transition: all 0.3s ease;
+}
+
+.filter-btn-white:hover {
+  background-color: var(--color-white) !important;
+  color: var(--color-black) !important;
+  border-color: var(--color-white) !important;
+  transform: translateY(-2px);
+}
+
+.concept-card:hover {
+  border-color: var(--color-primary) !important;
+  transform: translateY(-10px);
+}
+
+.concept-card:hover div {
+  color: var(--color-primary) !important;
+}
+
+/* Dropdown Menu */
+.nav-item-dropdown {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1a1a1a;
+  min-width: 220px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  top: 100%;
+  left: 0;
+  border-top: 2px solid var(--color-primary);
+  border-radius: 0 0 5px 5px;
+}
+
+.nav-item-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-item {
+  color: #fff !important;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: var(--font-body);
+  font-size: 14px;
+  border-bottom: 1px solid #333;
+  transition: all 0.2s ease;
+}
+
+.dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.dropdown-item:hover {
+  background-color: var(--color-primary);
+  color: #000 !important;
+  padding-left: 20px;
+}
